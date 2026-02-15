@@ -58,5 +58,5 @@ K --> E
 # 存档解密
 key,iv 请在 [gameDataAes2Json.py](https://github.com/CHCAT1320/RizlineGameSaveData/)寻找。
 
-# 琐事
+# 请输入文本
 我觉得RizScoreUploader.py应该用于测试单曲rks而非成为yyw的工具与捷径。
