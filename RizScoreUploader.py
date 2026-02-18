@@ -4,7 +4,7 @@ import random
 import requests
 import base64
 
-def rizline_aes_decrypt(encrypt_data: bytes, key: bytes = b"Sv@H,+SV-U*VEjCW,n7WA-@n}j3;U;XF", iv: bytes = b"1%[OB.<YSw?)o:rQ") -> str | None:
+def rizline_aes_decrypt(encrypt_data: bytes, key: bytes, iv: bytes) -> str | None:
     cipher = AES.new(key, AES.MODE_CBC, iv)
     dec_data = cipher.decrypt(encrypt_data)
     last_byte = dec_data[-1]
